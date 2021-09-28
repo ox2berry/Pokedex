@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,
+  :active {
+    outline: none;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-box-size-adjust: 100%;
+  }
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Karla;
+    font-weight: 400;
+    src: url(../font/Karla-Regular.ttf);
+}
+@font-face {
+    font-family: Karla;
+    font-weight: 700;
+    src: url(../font/Karla-Bold.ttf);
+}
+@font-face {
+    font-family: Karla;
+    font-weight: 700;
+    src: url(../font/Karla-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: SourceSansPro;
+    font-weight: 400;
+    src: url(../font/SourceSansPro-Regular.ttf);
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #F5DB13;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    align-items: center;
+    z-index: 1;
+}
+.wrapper-header{
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.header__menu-item{
+
+}
+.header__menu-item a{
+    text-decoration: none;
+    color: #000000;
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+.header__menu-item-link{
+    position: relative;
+    display: inline-block;
+}
+.header__menu-item-link::after{
+    content: "";
+    position: absolute;
+    background: #000;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 3px;
+}
+.main{
+    width: 1130px;
+    height: 946px;
+    margin: 0 auto;   
+}
+.main__text{
+    display: flex;
+    width: 1130px;
+    align-items: center;
+    height: 150px;
+}
+.main__text-title{
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+.main__text-bold{    
+    font-weight: 700;   
+}
+.main__input{
+    position: relative;
+    background: #F2F2F2;
+    box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.1);
+    border-radius: 40px;
+    width: 1100px;
+    height: 56px;
+    margin: 0 auto;
+}    
+.main__input-search{
+    position: absolute;
+    top: 17px;
+    left: 30px;
+    background-color: #F2F2F2;
+    font-family: SourceSansPro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(33, 33, 33, 0.8); 
+}
+.main__gallery{
+    margin: 120px 0;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    height: 138px;
+    width: 352px;
+    background-color: #F6F7F9;
+    border-radius: 8px;
+    padding-left: 26px;
+    margin-bottom: 45px;
+}
+.card__nickname{
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 7px;
+    padding-bottom: 17px;
+}
+.card__skills{
+    display: flex;
+    justify-content: space-between;
+    width: 89px;
+    padding-bottom: 8px;
+}
+.card__skills-point-value{
+    width: 38px;
+    height: 38px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card__skills-point-name{
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.card__features{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 132px;
+    z-index: 1;
+}
+.card__features-item{
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    width: 60px;
+}
+.card__features-item-grass{
+    background: #73D677;
+}
+.card__features-item-poison{
+    background: #07D6F2;
+}
+.card__image{
+    position: absolute;
+    right: 0;
+}
+.main__points{
+    display: flex;
+    justify-content: space-between;
+    width: 48px;
+    height: 8px;
+    margin: 0 auto;
+}
+.point{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4B4B4B;
+}
+.footer{
+    // background: #F2B807;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.wrapper-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1129px;
+    margin: 0 auto;    
+}
+.footer__text{
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
