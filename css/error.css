@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-box-size-adjust: 100%;
+  background: #212121;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Karla;
+  font-weight: 400;
+  src: url(../font/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: Karla;
+  font-weight: 700;
+  src: url(../font/Karla-Bold.ttf);
+}
+@font-face {
+  font-family: Karla;
+  font-weight: 700;
+  src: url(../font/Karla-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 400;
+  src: url(../font/SourceSansPro-Regular.ttf);
+}
+body {
+  background: #D93E30;
+  height: 100%;
+}
+
+.main__page {
+  position: relative;
+  width: 1440px;
+  height: 1040px;
+  background: #D93E30;
+  margin: 0 auto;
+}
+
+.main__page-text {
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 700px;
+  line-height: 818px;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main__page-image {
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+
+.main__page-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 799px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.main__page-description-text {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #F2F2F2;
+}
+
+.main__page-description-text-black {
+  color: #000000;
+}
+
+.main__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 62px;
+  padding-bottom: 95px;
+}
+
+.main__button-text {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  color: #212121;
+  background: #F2CB07;
+  -webkit-box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+          box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
+  width: 231px;
+  height: 66px;
+}

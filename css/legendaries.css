@@ -38,6 +38,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-box-size-adjust: 100%;
+  background: #212121;
 }
 
 input,
@@ -172,59 +173,24 @@ header {
 
 .main {
   width: 1130px;
-  height: 946px;
   margin: 0 auto;
-}
-
-.main__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1130px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 150px;
+  background: #212121;
 }
 
 .main__text-title {
   font-family: Karla;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 41px;
-  letter-spacing: 3px;
-  margin: 0 auto;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+  padding-bottom: 19px;
+  padding-top: 39px;
+  border-bottom: 1px solid #FFFFFF;
 }
 
-.main__text-bold {
-  font-weight: 700;
-}
-
-.main__input {
-  position: relative;
-  background: #F2F2F2;
-  -webkit-box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.1);
-          box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.1);
-  border-radius: 40px;
-  width: 1100px;
-  height: 56px;
-  margin: 0 auto;
-}
-
-.main__input-search {
-  position: absolute;
-  top: 17px;
-  left: 30px;
-  background-color: #F2F2F2;
-  font-family: SourceSansPro;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(33, 33, 33, 0.8);
-}
-
-.main__gallery {
-  margin: 120px 0;
+.main__card {
+  margin: 45px 0;
   height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,128 +198,156 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.card__text {
+  width: 412px;
+  height: 417px;
+}
+
+.card__text-title {
+  font-family: Karla;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 4px;
+  color: #FDFDFD;
+}
+
+.card__text-description {
+  font-family: SourceSansPro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+.card__skills {
+  width: 410px;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.card {
-  position: relative;
-  height: 138px;
-  width: 352px;
-  background-color: #F6F7F9;
-  border-radius: 8px;
-  padding-left: 26px;
-  margin-bottom: 45px;
+.card__skills-point {
+  width: 185px;
+  height: 50px;
 }
 
-.card__nickname {
+.card__skills-name {
+  font-family: Karla;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FDFDFD;
+}
+
+.card__skills-number {
   font-family: Karla;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  padding-top: 7px;
-  padding-bottom: 17px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FDFDFD;
+}
+
+.card__skills-line {
+  width: 168px;
+  height: 7px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.card__skills-line-yellow {
+  width: 138px;
+  height: 7px;
+  background: #F5DB13;
+  border-radius: 8px;
 }
 
 .card__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 89px;
-  padding-bottom: 8px;
 }
 
-.card__skills-point-value {
-  width: 38px;
-  height: 38px;
-  border: 3px solid #000;
-  border-radius: 50%;
-  font-family: Karla;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+.team {
+  width: 1125px;
+  height: 202px;
+}
+
+.team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 106%;
 }
 
-.card__skills-point-name {
-  font-family: Karla;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-}
-
-.card__features {
+.team__item-hero {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 132px;
+  width: 136px;
+  height: 190px;
+  background: radial-gradient(677.11% 487.95% at 102.13% -20%, #B57E10 0%, #B57E10 20.31%, #F9DF7B 39.58%, #FFF3A6 59.38%, #F9DF7B 78.13%, #B57E10 100%);
+  border-radius: 18px;
+}
+
+.team__item-hero-image {
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
   z-index: 1;
 }
 
-.card__features-item {
-  -webkit-box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
-          box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
-  border-radius: 11px;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  width: 60px;
-}
-
-.card__features-item-grass {
-  background: #73D677;
-}
-
-.card__features-item-poison {
-  background: #07D6F2;
-}
-
-.card__image {
+.team__item-hero-name {
   position: absolute;
-  right: 0;
-}
-
-.main__points {
+  bottom: 0;
+  width: 136px;
+  height: 52px;
+  background: #FFFFFF;
+  border-radius: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 48px;
-  height: 8px;
-  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.point {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #4B4B4B;
+.hero-name {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1D1E1D;
+}
+
+.shadow {
+  opacity: 0.5;
 }
 
 .footer {
-  height: 80px;
+  padding-top: 123px;
+  padding-bottom: 46px;
   width: 1130px;
+  height: 122px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,4 +376,5 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  color: #F2F2F2;
 }
